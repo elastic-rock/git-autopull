@@ -1,6 +1,6 @@
 # git-autopull
 
-A very minimalistic dokcer image that pulls specified git repositories every hour for backup purposes
+A minimalistic docker image that pulls specified git repositories every hour for backup purposes
 
 ## Usage
 
