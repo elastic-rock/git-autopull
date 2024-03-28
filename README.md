@@ -15,9 +15,10 @@ services:
     container_name: git-autopull
     image: elasticrock/git-autopull:latest
     volumes: 
-      - /path/to/dir:/git-autpull
+      - /path/to/dir:/git-autopull
     deploy:
       restart_policy:
         condition: unless-stopped
 ```
-2. Run `docker-compose up -d` to download the image and start it
+2. Add a file `repo_urls.txt` with the git repos to pull to the root of the folder that is going to be mounted
+3. Run `docker compose up -d` to download the image and start it
