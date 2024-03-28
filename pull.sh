@@ -35,8 +35,8 @@ update_repos() {
             fi
         done < "$input_file"
 
-        echo "Waiting for 30 seconds..."
-        sleep 30
+        echo "Waiting for 1 hour..."
+        sleep 3600
     done
     
 }
